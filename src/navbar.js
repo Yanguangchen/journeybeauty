@@ -8,7 +8,6 @@ import {
 } from "react-router-dom";
 
 //import local components
-import topbanner from "./Assets/topBanner.png";
 import Homepage from "./homepage";
 import Listings from "./listings";
 import ParentContact from "./contactParent";
@@ -103,7 +102,7 @@ function NavBar() {
           }}
         >
           <img
-            src={topbanner}
+            src="https://journeybeauty.net/static/media/topBanner.bec318bf75037d2029fe.png"
             alt="Logo"
             style={logoStyle}
             className="topbanner"

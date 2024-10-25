@@ -1,18 +1,12 @@
-import React, { useEffect } from 'react';
 import './quote.css';
-import quoteImage from "./Assets/Quote.png";
 
 function Quote() {
-  useEffect(() => {
-    const img = new Image();
-    img.src = quoteImage;
-  }, []);
+  const imageSrc = "http://localhost:3000/static/media/Quote.c6d6af851205833a13f1.png";
 
   return (
     <>
-      <link rel="preload" as="image" href={quoteImage} />
       <div className="container-wrapper">
-        <img src={quoteImage} className="quote-image" alt="quote" />
+        <img src={imageSrc} className="quote-image" alt="quote" />
       </div>
     </>
   );
