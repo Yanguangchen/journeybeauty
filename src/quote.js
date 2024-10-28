@@ -1,7 +1,7 @@
 import './quote.css';
+import imageSrc from "./Assets/Quote.png";
 
 function Quote() {
-  const imageSrc = "http://localhost:3000/static/media/Quote.c6d6af851205833a13f1.png";
 
   return (
     <>
