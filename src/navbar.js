@@ -11,6 +11,7 @@ import {
 import Homepage from "./homepage";
 import Listings from "./listings";
 import ParentContact from "./contactParent";
+import logo from "./Assets/topBanner.png"
 
 function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -102,7 +103,7 @@ function NavBar() {
           }}
         >
           <img
-            src="https://journeybeauty.net/static/media/topBanner.bec318bf75037d2029fe.png"
+            src={logo}
             alt="Logo"
             style={logoStyle}
             className="topbanner"
