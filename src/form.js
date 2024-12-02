@@ -247,7 +247,7 @@ const ContactForm = () => {
   return (
     <>
       <button style={styles.mailIcon} onClick={toggleForm}>
-        ✉️ Send appointment request
+        ✉️
       </button>
       <div style={styles.contactForm}>
         <button style={styles.closeButton} onClick={toggleForm}>
