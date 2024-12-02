@@ -299,7 +299,7 @@ const ContactForm = () => {
             Submit
           </button>
         </form>
-        <p style={Pstyle}>Powered by Web Wizard Forms for Shebella Beauty & slimming</p>
+        <p style={Pstyle}>Powered by Web Wizard Forms for Journey Beauty & Brow Work</p>
         <img
           src={Logo}
           alt="Web Wizards"
