@@ -6,23 +6,16 @@ import "./socials.css";
 
 function Socials() {
   useEffect(() => {
-    // Load Facebook Page Posts script
-    const facebookScript = document.createElement('script');
-    facebookScript.src = 'https://widgets.sociablekit.com/facebook-page-posts/widget.js';
-    facebookScript.async = true;
-    facebookScript.defer = true;
-    document.body.appendChild(facebookScript);
-
     // Load Medium Publication Feed script
-    const mediumScript = document.createElement('script');
-    mediumScript.src = 'https://widgets.sociablekit.com/medium-publication-feed/widget.js';
+    const mediumScript = document.createElement("script");
+    mediumScript.src =
+      "https://widgets.sociablekit.com/medium-publication-feed/widget.js";
     mediumScript.async = true;
     mediumScript.defer = true;
     document.body.appendChild(mediumScript);
 
     // Cleanup scripts on unmount
     return () => {
-      document.body.removeChild(facebookScript);
       document.body.removeChild(mediumScript);
     };
   }, []);
@@ -32,9 +25,16 @@ function Socials() {
       <div className="review-widget widgetControl">
         <GoogleReviews />
       </div>
-      <h1>Socials</h1>
-      <div className='sk-ww-facebook-page-posts' data-embed-id='25466004'></div>
-      <div class='sk-ww-medium-publication-feed' data-embed-id='25466021'></div>
+      <script
+        src="https://static.elfsight.com/platform/platform.js"
+        async
+      ></script>
+
+      <div
+        class="elfsight-app-0f52973c-323c-4f86-8941-1de51263eb5c"
+        data-elfsight-app-lazy
+      ></div>
+      <div class="sk-ww-medium-publication-feed" data-embed-id="25466021"></div>
       <div className="whatsapp-widget widgetControl">
         <WhatsAppWidget
           phoneNumber="90967798"
