@@ -8,10 +8,10 @@ body {
     font-family: Montserrat, sans-serif;
 }
 
-#title {
-    font-size: 50%;
+#title1 {
+    font-size: 0.01% !important;
     font-weight: bold;
-    color: #333;
+    color: white;
     margin: 0;
     padding-top: 1px;
     text-align: center;
