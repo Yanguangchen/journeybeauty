@@ -1,6 +1,6 @@
 import React from "react";
 import videosource from "./Assets/HorizontalVideo.mp4";
-// import videosource2 from "./Assets/HorizontalVideo2.mp4";
+import videosource2 from "./Assets/HorizontalVideo2.mp4";
 import videosource3 from "./Assets/HorizontalVideo3.mp4";
 
 import "./horizontalbanner.css"; // Import the CSS file
@@ -66,7 +66,7 @@ function HorizontalBanner() {
               playsInline
               loop
             >
-              <source src={videosource3} type="video/mp4" />
+              <source src={videosource2} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
           </div>
@@ -83,7 +83,7 @@ function HorizontalBanner() {
               playsInline
               loop
             >
-              <source src={videosource} type="video/mp4" />
+              <source src={videosource3} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
           </div>
