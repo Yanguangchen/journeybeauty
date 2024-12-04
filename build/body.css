@@ -1,28 +1,29 @@
-html  {
-    margin: auto !important;
-    padding: none !important;
+html {
+  margin: auto !important;
+  padding: none !important;
 }
 body {
-    margin: auto !important;
-    padding: none !important;
-    font-family: Montserrat, sans-serif;
+  margin: auto !important;
+  padding: none !important;
+  font-family: Montserrat, sans-serif;
 }
 
 #title1 {
-    font-size: 0.01% !important;
-    font-weight: bold;
-    color: white;
-    margin: 0;
-    padding-top: 1px;
-    text-align: center;
+  font-size: 0.01px !important;
+  font-weight: bold;
+  color: white;
+  margin: 0;
+  padding-top: 1px;
+  text-align: center;
 }
-@media (max-width: 430px) {
-    h1 {
-        font-size: 150% !important;
-    }
 
-    .splineContainer {
-        width: 100% !important;
-        height: 300px !important;
-    }
+@media (max-width: 430px) {
+  h1 {
+    font-size: 150% !important;
+  }
+
+  .splineContainer {
+    width: 100% !important;
+    height: 300px !important;
+  }
 }
