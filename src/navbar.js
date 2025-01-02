@@ -11,7 +11,6 @@ import {
 import Homepage from "./homepage";
 import Listings from "./listings";
 import ParentContact from "./contactParent";
-import logo from "./Assets/topBanner.png"
 
 function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -103,7 +102,7 @@ function NavBar() {
           }}
         >
           <img
-            src={logo}
+            src="Assets/topBanner.png"
             alt="Logo"
             style={logoStyle}
             className="topbanner"

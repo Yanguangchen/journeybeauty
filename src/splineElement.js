@@ -12,8 +12,7 @@ function SplineElement() {
   return (
     <>
       {isLoaded && (
-        <Spline scene="https://prod.spline.design/Co8ycXF6i3tyyqgM/scene.splinecode" />
-      )}
+        <spline-viewer loading-anim-type="spinner-big-dark" url="https://prod.spline.design/Co8ycXF6i3tyyqgM/scene.splinecode"></spline-viewer>      )}
     </>
   );
 }

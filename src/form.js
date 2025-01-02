@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useCallback } from "react";
-import Logo from "./Assets/webwizards.webp";
 
 const ContactForm = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -301,7 +300,7 @@ const ContactForm = () => {
         </form>
         <p style={Pstyle}>Powered by Web Wizard Forms for Journey Beauty & Brow Work</p>
         <img
-          src={Logo}
+          src="Assets/webwizards.webp"
           alt="Web Wizards"
           style={{ width: "100%", marginTop: "20px" }}
         />
