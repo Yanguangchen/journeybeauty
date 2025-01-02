@@ -79,7 +79,7 @@ function HorizontalBanner() {
               playsInline
               loop
             >
-              <source src="Assets/HorizontalVideo2.mp4" type="video/mp4" />
+              <source src="Assets/HorizontalVideo3.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
           </div>
