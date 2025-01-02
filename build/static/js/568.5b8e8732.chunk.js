@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkjourneybeauty=self.webpackChunkjourneybeauty||[]).push([[568],{568:(e,s,a)=>{a.r(s),a.d(s,{default:()=>n});var t=a(579);const n=function(){return(0,t.jsx)(t.Fragment,{children:(0,t.jsx)("div",{className:"container-wrapper",children:(0,t.jsx)("img",{src:"Assets/Quote.png",className:"quote-image",alt:"quote"})})})}}}]);
-//# sourceMappingURL=568.5b8e8732.chunk.js.map
