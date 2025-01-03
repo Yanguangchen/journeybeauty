@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkjourneybeauty=self.webpackChunkjourneybeauty||[]).push([[309],{309:(e,n,s)=>{s.r(n),s.d(n,{default:()=>p});s(43);var i=s(579);const p=()=>(0,i.jsx)("spline-viewer",{"loading-anim-type":"spinner-big-dark",url:"https://prod.spline.design/Co8ycXF6i3tyyqgM/scene.splinecode"})}}]);
+//# sourceMappingURL=309.4a694f90.chunk.js.map
