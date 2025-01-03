@@ -1,5 +1,8 @@
-import React from "react";
+import React, { Suspense, lazy } from "react";
 import "./splice.css";
+
+// Lazy load the spline-viewer component
+const SplineViewer = lazy(() => import('./SplineViewer'));
 
 function SpliceElement() {
   return (
@@ -7,10 +10,9 @@ function SpliceElement() {
       <div>
         <div className="spline-container splineContainer">
           <div className="darkmodeContainer"></div>
-          <spline-viewer
-            loading-anim-type="spinner-big-dark"
-            url="https://prod.spline.design/Co8ycXF6i3tyyqgM/scene.splinecode"
-          ></spline-viewer>
+          <Suspense fallback={<div>Loading...</div>}>
+            <SplineViewer />
+          </Suspense>
         </div>
       </div>
     </main>
