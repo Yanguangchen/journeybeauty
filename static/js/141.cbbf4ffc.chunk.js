@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkjourneybeauty=self.webpackChunkjourneybeauty||[]).push([[141],{141:(e,n,s)=>{s.r(n),s.d(n,{default:()=>r});s(43);var i=s(579);const r=function(){return(0,i.jsx)("main",{children:(0,i.jsx)("div",{children:(0,i.jsxs)("div",{className:"spline-container splineContainer",children:[(0,i.jsx)("div",{className:"darkmodeContainer"}),(0,i.jsx)("spline-viewer",{"loading-anim-type":"spinner-big-dark",url:"https://prod.spline.design/Co8ycXF6i3tyyqgM/scene.splinecode"})]})})})}}}]);
+//# sourceMappingURL=141.cbbf4ffc.chunk.js.map
