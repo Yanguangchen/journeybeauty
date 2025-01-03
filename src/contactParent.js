@@ -4,8 +4,10 @@ import ContactInfo from "./contactinfo";
 function Contactparent() {
   return (
     <>
+    <main>
       <ContactInfo />
       <Maps />
+      </main>
     </>
   );
 }

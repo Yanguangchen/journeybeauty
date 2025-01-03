@@ -1,5 +1,4 @@
 import React from "react";
-import SplineElement from "./splineElement";
 import "./splice.css";
 
 function SpliceElement() {
@@ -8,7 +7,10 @@ function SpliceElement() {
       <div>
         <div className="spline-container splineContainer">
           <div className="darkmodeContainer"></div>
-          <SplineElement />
+          <spline-viewer
+            loading-anim-type="spinner-big-dark"
+            url="https://prod.spline.design/Co8ycXF6i3tyyqgM/scene.splinecode"
+          ></spline-viewer>
         </div>
       </div>
     </main>
