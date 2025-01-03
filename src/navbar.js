@@ -93,91 +93,93 @@ function NavBar() {
 
   return (
     <Router>
-      <div style={bodyStyle}>
-        <div
-          style={{
-            backgroundColor: "white",
-            textAlign: "center",
-            padding: "20px 0",
-          }}
-        >
-          <img
-            src="Assets/topBanner.png"
-            alt="Logo"
-            style={logoStyle}
-            className="topbanner"
-          />
-        </div>
-        <div style={navBarStyle} className="navbarStyle">
+      <nav>
+        <div style={bodyStyle}>
           <div
-            style={hamburgerStyle}
-            onClick={toggleMenu}
-            className="hamburger"
+            style={{
+              backgroundColor: "white",
+              textAlign: "center",
+              padding: "20px 0",
+            }}
           >
-            &#9776;
+            <img
+              src="Assets/topBanner.png"
+              alt="Logo"
+              style={logoStyle}
+              className="topbanner"
+            />
           </div>
-          <div style={navLinksContainerStyle}>
-            <Link to="/" style={linkStyle} className="navlinks">
-              Home
-            </Link>
-            <a
-              href="https://chatgpt.com/g/g-ms5xbZuoX-journeybeauty-bot"
-              style={linkStyle}
-              className="navlinks"
+          <div style={navBarStyle} className="navbarStyle">
+            <div
+              style={hamburgerStyle}
+              onClick={toggleMenu}
+              className="hamburger"
             >
-              Chat with our AI bot
-            </a>
-            <Link to="/listings" style={linkStyle} className="navlinks">
-              Price List
-            </Link>
-            <Link to="/contact" style={linkStyle} className="navlinks">
-              Contact
-            </Link>
-          </div>
-          {isMenuOpen && (
-            <div style={{ ...menuStyle, ...navLinksMobileStyle }}>
-              <Link
-                to="/"
-                style={linkStyle}
-                className="navlinks"
-                onClick={toggleMenu}
-              >
+              &#9776;
+            </div>
+            <div style={navLinksContainerStyle}>
+              <Link to="/" style={linkStyle} className="navlinks">
                 Home
               </Link>
               <a
                 href="https://chatgpt.com/g/g-ms5xbZuoX-journeybeauty-bot"
                 style={linkStyle}
                 className="navlinks"
-                onClick={toggleMenu}
               >
                 Chat with our AI bot
               </a>
-              <Link
-                to="/listings"
-                style={linkStyle}
-                className="navlinks"
-                onClick={toggleMenu}
-              >
-                Listings
+              <Link to="/listings" style={linkStyle} className="navlinks">
+                Price List
               </Link>
-              <Link
-                to="/contact"
-                style={linkStyle}
-                className="navlinks"
-                onClick={toggleMenu}
-              >
+              <Link to="/contact" style={linkStyle} className="navlinks">
                 Contact
               </Link>
             </div>
-          )}
+            {isMenuOpen && (
+              <div style={{ ...menuStyle, ...navLinksMobileStyle }}>
+                <Link
+                  to="/"
+                  style={linkStyle}
+                  className="navlinks"
+                  onClick={toggleMenu}
+                >
+                  Home
+                </Link>
+                <a
+                  href="https://chatgpt.com/g/g-ms5xbZuoX-journeybeauty-bot"
+                  style={linkStyle}
+                  className="navlinks"
+                  onClick={toggleMenu}
+                >
+                  Chat with our AI bot
+                </a>
+                <Link
+                  to="/listings"
+                  style={linkStyle}
+                  className="navlinks"
+                  onClick={toggleMenu}
+                >
+                  Listings
+                </Link>
+                <Link
+                  to="/contact"
+                  style={linkStyle}
+                  className="navlinks"
+                  onClick={toggleMenu}
+                >
+                  Contact
+                </Link>
+              </div>
+            )}
+          </div>
+          <Routes>
+            <Route path="/" element={<Homepage />} />
+            <Route path="/listings" element={<Listings />} />
+            <Route path="/contact" element={<ParentContact />} />
+            <Route path="*" element={<Navigate replace to="/" />} />
+          </Routes>
         </div>
-        <Routes>
-          <Route path="/" element={<Homepage />} />
-          <Route path="/listings" element={<Listings />} />
-          <Route path="/contact" element={<ParentContact />} />
-          <Route path="*" element={<Navigate replace to="/" />} />
-        </Routes>
-      </div>
+      </nav>
     </Router>
   );
 }

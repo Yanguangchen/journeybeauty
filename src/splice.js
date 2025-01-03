@@ -4,13 +4,14 @@ import "./splice.css";
 
 function SpliceElement() {
   return (
-    <div>
+    <main>
+      <div>
         <div className="spline-container splineContainer">
-          <div className="darkmodeContainer">
-          </div>
+          <div className="darkmodeContainer"></div>
           <SplineElement />
         </div>
       </div>
+    </main>
   );
 }
 

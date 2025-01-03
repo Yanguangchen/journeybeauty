@@ -5,12 +5,14 @@ import "./Midsection.css";
 
 function Midsection() {
   return (
-    <div className="container-wrapper">
-      <div className="grid-wrapper">
-        <Listings />
-        <Maps />
+    <main>
+      <div className="container-wrapper">
+        <div className="grid-wrapper">
+          <Listings />
+          <Maps />
+        </div>
       </div>
-    </div>
+    </main>
   );
 }
 

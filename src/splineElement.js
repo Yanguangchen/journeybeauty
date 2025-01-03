@@ -11,8 +11,14 @@ function SplineElement() {
 
   return (
     <>
-      {isLoaded && (
-        <spline-viewer loading-anim-type="spinner-big-dark" url="https://prod.spline.design/Co8ycXF6i3tyyqgM/scene.splinecode"></spline-viewer>      )}
+      <main>
+        {isLoaded && (
+          <spline-viewer
+            loading-anim-type="spinner-big-dark"
+            url="https://prod.spline.design/Co8ycXF6i3tyyqgM/scene.splinecode"
+          ></spline-viewer>
+        )}
+      </main>
     </>
   );
 }

@@ -21,37 +21,42 @@ function Socials() {
   }, []);
 
   return (
-    <div className="flex-container">
-      <div className="review-widget widgetControl">
-        <GoogleReviews />
-      </div>
-      <script
-        src="https://static.elfsight.com/platform/platform.js"
-        async
-      ></script>
+    <main>
+      <div className="flex-container">
+        <div className="review-widget widgetControl">
+          <GoogleReviews />
+        </div>
+        <script
+          src="https://static.elfsight.com/platform/platform.js"
+          async
+        ></script>
 
-      <div
-        class="elfsight-app-0f52973c-323c-4f86-8941-1de51263eb5c"
-        data-elfsight-app-lazy
-      ></div>
-      <div class="sk-ww-medium-publication-feed" data-embed-id="25466021"></div>
-      <div
-        className="whatsapp-widget widgetControl"
-        style={{
-          position: "fixed",
-          right: "1px", // Keep it on the right side
-          bottom: "15%", // Position it halfway up the page
-          transform: "translateY(50%)", // Center it vertically
-          zIndex: 1, // Use a very high z-index
-        }}
-      >
-        <WhatsAppWidget
-          phoneNumber="90967798"
-          companyName="Journey Beauty & Brow Work"
-          message="Ready to change your whole look? Contact us now!"
-        />
+        <div
+          class="elfsight-app-0f52973c-323c-4f86-8941-1de51263eb5c"
+          data-elfsight-app-lazy
+        ></div>
+        <div
+          class="sk-ww-medium-publication-feed"
+          data-embed-id="25466021"
+        ></div>
+        <div
+          className="whatsapp-widget widgetControl"
+          style={{
+            position: "fixed",
+            right: "1px", // Keep it on the right side
+            bottom: "15%", // Position it halfway up the page
+            transform: "translateY(50%)", // Center it vertically
+            zIndex: 1, // Use a very high z-index
+          }}
+        >
+          <WhatsAppWidget
+            phoneNumber="90967798"
+            companyName="Journey Beauty & Brow Work"
+            message="Ready to change your whole look? Contact us now!"
+          />
+        </div>
       </div>
-    </div>
+    </main>
   );
 }
 

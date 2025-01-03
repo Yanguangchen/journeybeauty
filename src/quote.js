@@ -1,12 +1,13 @@
-import './quote.css';
+import "./quote.css";
 
 function Quote() {
-
   return (
     <>
-      <div className="container-wrapper">
-        <img src="Assets/Quote.png" className="quote-image" alt="quote" />
-      </div>
+      <section>
+        <div className="container-wrapper">
+          <img src="Assets/Quote.png" className="quote-image" alt="quote" />
+        </div>
+      </section>
     </>
   );
 }

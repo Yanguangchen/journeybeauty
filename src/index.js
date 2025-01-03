@@ -5,9 +5,11 @@ import ContactForm from "./form";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <>
-    <div>
-      <ContactForm />
-      <NavBar />
-    </div>
+    <main>
+      <div>
+        <ContactForm />
+        <NavBar />
+      </div>
+    </main>
   </>
 );
